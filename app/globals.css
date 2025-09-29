@@ -2,5 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; }
-body { font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji'; }
+/* Base tweaks */
+html, body { height: 100%; }
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #ffffff;
+  color: #111827;
+}
+
+/* Optional: nicer headings/buttons */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center rounded-md border border-black bg-black px-5 py-2.5 text-white transition hover:bg-white hover:text-black;
+  }
+  .btn-outline {
+    @apply inline-flex items-center rounded-md border border-neutral-300 px-5 py-2.5 transition hover:border-black;
+  }
+  .card {
+    @apply rounded-2xl border p-6;
+  }
+}
