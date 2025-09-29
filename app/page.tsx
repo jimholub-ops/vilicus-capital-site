@@ -42,10 +42,15 @@ export default function Page() {
           </nav>
           <div className="flex items-center gap-2">
             <Button asChild variant="outline" className="rounded-2xl">
-              <a href="/overview.pdf" target="_blank" rel="noreferrer">
-                <Download className="h-4 w-4 mr-2"/>
-                Download overview
-              </a>
+              <a
+  href="/overview.pdf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="inline-flex items-center rounded-md px-4 py-2"
+>
+  Download Overview
+</a>
+
             </Button>
             <Button asChild className="rounded-2xl">
               <a href="#contact">Contact</a>
