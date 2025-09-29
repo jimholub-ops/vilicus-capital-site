@@ -4,9 +4,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Vilicus Capital",
   description: "Financing a regenerative, employee-owned real economy.",
-  icons: {
-    icon: "/favicon.ico",
-  },
+  icons: { icon: "/favicon.ico" },
+};
+
   openGraph: {
     title: "Vilicus Capital",
     description: "Financing a regenerative, employee-owned real economy.",
